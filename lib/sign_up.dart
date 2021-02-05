@@ -128,6 +128,9 @@ class SignUp extends StatelessWidget {
                         Text(' Sign In')
                       ],
                     ),
+                    SizedBox(
+                      height: 50,
+                    )
                   ],
                 ),
               ),
