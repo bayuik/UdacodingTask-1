@@ -39,7 +39,7 @@ class CreatePost extends StatelessWidget {
               )),
           Container(
               margin: EdgeInsets.only(right: 30, left: 30, bottom: 15),
-              height: 500,
+              height: 450,
               padding: EdgeInsets.all(4),
               decoration: BoxDecoration(
                   border: Border.all(width: 2, color: Colors.blue)),
