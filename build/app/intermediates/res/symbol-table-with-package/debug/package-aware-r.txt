@@ -1,4 +1,4 @@
-com.example.byblog
+com.task1.byblog
 attr alpha
 attr font
 attr fontProviderAuthority

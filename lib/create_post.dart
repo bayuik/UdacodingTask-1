@@ -1,3 +1,4 @@
+import 'package:byblog/your_blogs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -48,11 +49,10 @@ class CreatePost extends StatelessWidget {
                 maxLength: null,
                 maxLines: null,
                 decoration: InputDecoration(
-                  border: InputBorder.none,
-                  hintText:
-                      "Flutter is Google's UI toolkit for \nbuilding beautiful, natively compiled \napplications for mobile, web,\nand desktop from a single codebase.",
-                  hintStyle: TextStyle(color: Colors.black)
-                ),
+                    border: InputBorder.none,
+                    hintText:
+                        "Flutter is Google's UI toolkit for \nbuilding beautiful, natively compiled \napplications for mobile, web,\nand desktop from a single codebase.",
+                    hintStyle: TextStyle(color: Colors.black)),
               )),
           Container(
             padding: EdgeInsets.all(3.0),
@@ -62,11 +62,17 @@ class CreatePost extends StatelessWidget {
               minWidth: 350,
               shape: RoundedRectangleBorder(
                   borderRadius: new BorderRadius.circular(50)),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return YourBlogs();
+                }));
+              },
               child: Text(
                 'Publish',
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
-              
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
               ),
               color: Colors.orange,
             ),

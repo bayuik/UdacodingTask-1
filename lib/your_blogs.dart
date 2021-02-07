@@ -1,4 +1,4 @@
-import 'package:byblog/your_blogs.dart';
+import 'package:byblog/create_post.dart';
 import 'package:flutter/material.dart';
 
 class YourBlogs extends StatefulWidget {
@@ -116,8 +116,11 @@ class _YourBlogsState extends State<YourBlogs> {
           ],
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-        
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return CreatePost();
+            }));
+          },
           backgroundColor: Colors.black45,
           child: Icon(Icons.add),
         ));
